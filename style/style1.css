@@ -1,0 +1,332 @@
+body{                  
+    
+    /* esta es la configuración que se le da a todo el body del documento 
+    en ella se definen margenes y padding 0, asi como la fuente*/
+
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair', serif;
+    
+    
+}
+
+/* el siguiente selector de id nos indica el elemento black1 el cual es un contenedor
+que nombramos en el html */
+
+#black1{
+    background-color: black;
+    color: white;
+    
+}
+
+/* lo siguiente es la barra de navegación */
+
+nav{
+    padding: 14px 16px;
+    
+    
+}
+
+/* lo siguiente es la lista que hay dentro de la barra de navegación */
+
+
+
+ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    justify-content: right;
+
+}
+
+/* el elemento de la lista */
+
+li a{
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+    
+}
+
+.contYo{
+
+    width: 99%;
+
+    margin: 10px;
+
+    display: flex;
+    justify-content: center;
+}
+
+
+.mascara{
+
+    border-radius: 100%;
+    width: 200px;
+      height: 200px;
+      background-image: url('../img/yo.jpg');
+      /* -webkit-mask-image: url('ruta-a-tu-imagen-mascara.png');
+      mask-image: url('ruta-a-tu-imagen-mascara.png'); */
+      mask-repeat: no-repeat;
+      mask-position: center;
+      mask-size: contain;
+      background-size: cover;
+
+}
+
+
+.datos{
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+    margin: 10px;
+    font-size: 30px;
+}
+
+.datos2{
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+/* este es un siguiente bloque de la pagina el cual contiene is habilidades */
+
+
+#white1{
+
+    display: flex;
+    justify-content: center;
+}
+
+
+/* lo siguiente es el contenedor de los iconos de habilidad */
+
+
+.skills{
+
+    
+    width: 150px;
+
+    height: 150px;
+    border-radius: 27px;
+background: #ffffff;
+box-shadow:  32px 32px 64px #ababab,
+             -32px -32px 64px #ffffff;
+
+    margin: 70px;
+
+    background-size: cover;
+
+    
+
+ 
+   
+}
+
+/* el contenedor de la imagen de la habilidad */
+
+.contentSkills{
+
+    display: flex;
+    padding: 20px;
+
+}
+
+/* el contenedor de las imagenes del proyecto es el siguiente trozo de codigo */
+
+
+.img_proyect{
+
+    width: 300px;
+
+    
+    border-radius: 27px;
+background: #ffffff;
+box-shadow:  32px 32px 64px #ababab,
+             -32px -32px 64px #ffffff;
+
+    margin: 30px;
+
+    background-size: cover;
+
+
+
+
+
+}
+
+/* el siguiente es otro contenedor más abajp */
+
+#black2{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    
+
+    
+
+}
+
+/* white2 es otro contenedor */
+
+#white2{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin: 50px;
+
+}
+
+/* por ultimo tenemos la media query la cual
+nos inidica que si la pantalla es menor a 480 pixeles 
+se va a aplicar la configuración contenida dentro
+de esta */
+
+
+@media screen and (max-width: 680px) {
+
+    .img_proyect{
+
+        width: 300px;
+        border: 1px black solid;
+    }
+
+    .descSkill{
+
+        width: 20px;
+
+    }
+
+
+
+    #black1{
+        background: white;
+        color: black;
+    }
+
+    nav{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 20px;
+        padding: 0;
+
+
+    }
+
+
+    ul {
+        list-style-type: none;
+        display: block;
+        justify-content: center;
+        
+      }
+
+      li a{
+        color: black;
+      }
+      
+      li a:hover {
+        background-color: #555;
+        color: white;
+      }
+
+
+      
+
+      .skills{
+
+         
+    width: 50px;
+
+    height: 50px;
+
+    border-radius: 10px;
+
+    margin: 10px;
+
+      }
+
+      .yo{
+
+        background-size: cover;
+        width: 100px;
+        
+    
+    }
+
+   
+  }
+
+
+
+#contacto{
+
+    display: flex;
+
+    border: 1px solid black;
+    
+    justify-content: center;
+
+    align-items: center;
+
+    background-color: black;
+    height: 300px;
+
+
+}
+
+form{
+
+    color: white;
+
+}
+
+.btn1{
+
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+}
+
+.contbtn{
+
+    display: flex;
+    justify-content: center;
+}
+
+.f{
+    margin: 10px;
+    background-color: black;
+    
+}
+
+.n{
+    margin: 10px;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+}
+
+
+.contCON{
+    display: flex;
+    justify-content: center;
+}
+
+.contImg{
+
+
+    display: flex;
+    justify-content: center;
+
+}
